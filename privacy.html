@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bill's Sudoku Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: the game's indigo wave cloth as the ground, the policy on one sheet of washi paper, a vermilion seal at the top. One committed look, the same as the app. */
+:root{
+  --night:#111A2C; --wave:#1C2846; --washi:#F4ECDC; --washi-edge:#E6DAC2;
+  --ink:#1D1913; --ink-soft:#5B5245; --shu:#C8432B; --shu-ink:#A6361F; --mist:#B9B3A5;
+  --font-display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --font-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.7;
+  background-color:var(--night);
+  background-image:
+    radial-gradient(circle at 100% 150%, var(--night) 24%, var(--wave) 24%, var(--wave) 28%, var(--night) 28%, var(--night) 36%, var(--wave) 36%, var(--wave) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, var(--night) 24%, var(--wave) 24%, var(--wave) 28%, var(--night) 28%, var(--night) 36%, var(--wave) 36%, var(--wave) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, var(--wave) 10%, var(--night) 10%, var(--night) 23%, var(--wave) 23%, var(--wave) 30%, var(--night) 30%, var(--night) 43%, var(--wave) 43%, var(--wave) 50%, var(--night) 50%, var(--night) 63%, var(--wave) 63%, var(--wave) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--wave) 5%, var(--night) 5%, var(--night) 15%, var(--wave) 15%, var(--wave) 20%, var(--night) 20%, var(--night) 29%, var(--wave) 29%, var(--wave) 34%, var(--night) 34%, var(--night) 44%, var(--wave) 44%, var(--wave) 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0 50%, var(--wave) 5%, var(--night) 5%, var(--night) 15%, var(--wave) 15%, var(--wave) 20%, var(--night) 20%, var(--night) 29%, var(--wave) 29%, var(--wave) 34%, var(--night) 34%, var(--night) 44%, var(--wave) 44%, var(--wave) 49%, transparent 49%, transparent);
+  background-size:96px 48px;
+}
+.wrap{max-width:760px;margin-inline:auto;padding-block:40px 56px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:22px}
+.mast{display:flex;align-items:center;gap:16px;color:var(--washi)}
+.seal{flex:none;width:58px;height:58px;display:grid;place-items:center;background:var(--shu);color:#FFF4E8;border-radius:8px;font-family:var(--font-display);font-weight:800;font-size:20px;line-height:1.02;text-align:center;box-shadow:inset 0 0 0 3px var(--shu),inset 0 0 0 5px rgba(255,244,232,.85);transform:rotate(-4deg)}
+.mast-text{min-width:0}
+.mast-name{margin:0;font-family:var(--font-display);font-weight:800;font-size:clamp(28px,6vw,40px);line-height:1.05;color:var(--washi)}
+.mast-sub{margin:4px 0 0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist)}
+.sheet{background:var(--washi);border-radius:4px;padding:clamp(22px,5vw,44px);box-shadow:0 0 0 8px #2E4472,0 26px 50px rgba(0,0,0,.5);min-width:0}
+h1{margin:0;font-family:var(--font-display);font-weight:800;font-size:clamp(30px,5.4vw,40px);line-height:1.15;text-wrap:balance}
+.meta{margin:8px 0 0;color:var(--ink-soft);font-size:14px}
+.lede{margin:24px 0 0;padding:16px 18px;border-left:4px solid var(--shu);background:var(--washi-edge);font-size:17px;font-weight:500}
+section{margin-top:34px}
+h2{margin:0 0 8px;font-family:var(--font-display);font-weight:700;font-size:23px;line-height:1.3;text-wrap:balance;display:flex;align-items:baseline;gap:10px}
+h2 .jp{font-size:15px;color:var(--shu-ink);font-weight:700}
+p{margin:0 0 12px;max-width:65ch}
+ul{margin:0 0 12px;padding-left:1.2em;max-width:65ch}
+li{margin:4px 0}
+a{color:var(--shu-ink);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--shu);outline-offset:3px}
+.table-wrap{overflow-x:auto;margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;min-width:420px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid rgba(29,25,19,.16)}
+th{font-weight:700;color:var(--ink-soft);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.email{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:8px 0 0}
+.email code{font-family:var(--font-body);font-weight:700;font-size:17px;background:#FFFDF7;border:1.5px solid rgba(29,25,19,.22);border-radius:6px;padding:6px 10px;user-select:all;word-break:break-all}
+.copy{font:inherit;font-size:14px;font-weight:700;color:#FFF6EC;background:var(--shu);border:0;border-radius:6px;padding:8px 14px;cursor:pointer}
+.copy:hover{background:var(--shu-ink)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;color:var(--mist);font-size:13px}
+.foot a{color:var(--washi)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="seal" aria-hidden="true">数<br>独</div>
+    <div class="mast-text">
+      <p class="mast-name">Bill’s Sudoku</p>
+      <p class="mast-sub">Nine squares · nine numbers</p>
+    </div>
+  </header>
+
+  <main class="sheet">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective October 14, 2026</p>
+
+    <p class="lede">Bill’s Sudoku does not collect any personal data. There is no account to create, no advertising, no analytics and no tracking, and the app does not send anything over the internet.</p>
+
+    <section id="who">
+      <h2><span class="jp" lang="ja">作者</span>Who makes Bill’s Sudoku</h2>
+      <p>Bill’s Sudoku is made by Paul Allan Manacap, an independent developer. In this policy, “we” and “us” mean the developer of Bill’s Sudoku. This policy covers the Bill’s Sudoku app for iPhone, iPad and Mac, and for Android.</p>
+    </section>
+
+    <section id="device">
+      <h2><span class="jp" lang="ja">端末</span>What stays on your device</h2>
+      <p>To work, the app keeps a few things in its own storage on your device. They never leave your device and we cannot see them.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">What</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><td>The name you enter</td><td>To greet you and cheer you on when you solve a puzzle</td></tr>
+            <tr><td>Your current and saved game</td><td>So you can pick up where you left off</td></tr>
+            <tr><td>Your settings</td><td>Music on or off, kanji numbers, marking wrong numbers, clearing notes</td></tr>
+            <tr><td>How many puzzles you have solved</td><td>To show your count after each solve</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>On Android, the app also keeps the date your free trial started and whether you own the full game, so the game knows what to unlock even when you’re offline.</p>
+      <p>You can change your name at any time from the round name button in the top corner of the game. Deleting the app removes all of this from your device. If your device backs up apps (iCloud backup, or Android backup to your Google Account), these settings can be included in that backup, which is stored by Apple or Google for you and never sent to us.</p>
+    </section>
+
+    <section id="purchases">
+      <h2><span class="jp" lang="ja">購入</span>Free trial and purchases</h2>
+      <p>On iPhone, iPad and Mac, the free 30-day trial and the full game are in-app purchases made through Apple’s App Store, and Apple handles the payment. On Android, the full game is bought through Google Play, and Google handles the payment. We never receive your payment details, your Apple Account or Google Account details, or your contact information.</p>
+      <p>To unlock content, the app checks the purchase records that Apple or Google keep for your account, through the App Store or the Play Store app on your device. This check happens on your device, and the records are not sent to us. Apple’s handling of your purchases is covered by the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>, and Google’s by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="jp" lang="ja">共有</span>Sharing, selling and tracking</h2>
+      <ul>
+        <li>We do not collect personal data, so we have none to share or sell.</li>
+        <li>The app contains no third-party analytics, advertising or tracking tools.</li>
+        <li>The app does not track you across other companies’ apps or websites and does not use the advertising identifier.</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2><span class="jp" lang="ja">子供</span>Children</h2>
+      <p>Bill’s Sudoku is suitable for all ages. Because the app collects no personal information from anyone, it collects none from children.</p>
+    </section>
+
+    <section id="deletion">
+      <h2><span class="jp" lang="ja">削除</span>Keeping and deleting data</h2>
+      <p>We keep no data about you, so there is nothing for us to store, keep or delete. Everything the app saves stays on your device, and you can remove it at any time by deleting the app. If you have a question about your data, email us and we will answer it.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="jp" lang="ja">変更</span>Changes to this policy</h2>
+      <p>If the way the app handles information ever changes, we will update this page and the date at the top before the change takes effect.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="jp" lang="ja">連絡</span>Contact</h2>
+      <p>Questions about this policy or about Bill’s Sudoku? Email us:</p>
+      <div class="email">
+        <code id="addr">jpam2345@gmail.com</code>
+        <button class="copy" id="copyBtn" type="button">Copy address</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 Paul Allan Manacap</span>
+    <a href="support.html" rel="noopener">Support</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('copyBtn'), addr = document.getElementById('addr');
+  btn.addEventListener('click', function(){
+    var text = addr.textContent.trim();
+    function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy address'; }, 1800); }
+    function select(){ var r = document.createRange(); r.selectNodeContents(addr); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected, press Copy'; setTimeout(function(){ btn.textContent = 'Copy address'; }, 2200); }
+    try { navigator.clipboard.writeText(text).then(done, select); } catch (e) { select(); }
+  });
+})();
+</script>
+</body>
+</html>
