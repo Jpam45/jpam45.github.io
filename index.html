@@ -65,6 +65,18 @@ th{font-weight:700;color:var(--ink-soft);font-size:13px;letter-spacing:.06em;tex
 .btn-line{border:1.5px solid var(--ink);color:var(--ink)}
 .btn-line:hover{background:var(--washi-edge)}
 .facts{margin:22px 0 0;padding-left:1.2em}
+.get{margin:26px 0 0;padding:18px 20px;border-radius:6px;background:var(--washi-edge)}
+.get h2{margin:0 0 10px;font-size:20px}
+.stores{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn-store{background:var(--ink);color:#F4ECDC;gap:10px}
+.btn-store:hover{background:#000}
+.btn-store small{display:block;font-size:11px;font-weight:500;letter-spacing:.04em;opacity:.8;line-height:1.1}
+.btn-store b{display:block;font-size:16px;line-height:1.15}
+.btn-soon{border:1.5px dashed var(--ink-soft);color:var(--ink-soft);cursor:default}
+.btn-soon small,.btn-soon b{display:block}
+.btn-soon small{font-size:11px;font-weight:500;letter-spacing:.04em;line-height:1.1}
+.btn-soon b{font-size:16px;line-height:1.15}
+.get p{margin:12px 0 0;font-size:14px;color:var(--ink-soft)}
 </style>
 </head>
 <body>
@@ -87,6 +99,14 @@ th{font-weight:700;color:var(--ink-soft);font-size:13px;letter-spacing:.06em;tex
       <li>For iPhone, iPad, Mac and Android, including foldables</li>
       <li>Free for 30 days, then a single one-time purchase unlocks the full game</li>
     </ul>
+    <div class="get">
+      <h2>Get the game</h2>
+      <div class="stores">
+        <a class="btn btn-store" href="https://apps.apple.com/app/id6822280052"><span><small>Download on the</small><b>App Store</b></span></a>
+        <span class="btn btn-soon" aria-label="Google Play: coming soon"><span><small>Coming soon on</small><b>Google Play</b></span></span>
+      </div>
+      <p>For iPhone, iPad and Mac with Apple silicon now. The Android version is being tested and will follow on Google Play.</p>
+    </div>
     <div class="links">
       <a class="btn btn-shu" href="support.html">Support</a>
       <a class="btn btn-line" href="privacy.html">Privacy Policy</a>
@@ -95,7 +115,7 @@ th{font-weight:700;color:var(--ink-soft);font-size:13px;letter-spacing:.06em;tex
 
   <footer class="foot">
     <span>© 2026 Paul Allan Manacap</span>
-    <span>Coming soon to the App Store and Google Play</span>
+    <span>Now on the App Store · Android coming soon</span>
   </footer>
 </div>
 </body>
